@@ -77,4 +77,11 @@ var startTransition = () => {
     });
   };
   
-  loadImages().then(() => startTransition());
+loadImages().then(() => startTransition());
+
+window.setInterval(function() {
+  var date = new Date();
+  if (date.getHours() === 8 && date.getMinutes() === 0) {
+    location.reload();
+  }
+}, 60000);

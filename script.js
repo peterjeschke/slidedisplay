@@ -66,6 +66,7 @@ var startTransition = () => {
         if (await checkImageExists(url + fileName + "." + ending)) {
           endFound = false;
           fileNames.push(url + fileName + "." + ending);
+          break;
         }
       }
       i++;
